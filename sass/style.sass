@@ -1,4 +1,5 @@
 @use 'variables'
+@use 'mixins'
 
 *
     margin: 0
@@ -10,3 +11,45 @@ body
     font-family: variables.$main-font
     background-color: variables.$bg-color
     margin: 2rem
+    color: variables.$text-color
+
+.aside
+    @include mixins.flex-center
+    width: 30%
+    gap: 2rem
+
+    &-section-1 
+        background-color: variables.$bg-cards
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        padding: 2rem
+        border-radius: 2rem
+        width: 21.75rem
+        height: 18.25rem
+
+        &-img
+            border-radius: 50%
+        
+        div
+            text-align: center
+            @include mixins.flex-center
+            gap: .7rem
+    
+    &-section-2 
+        background-color: variables.$bg-cards
+        width: 21.75rem
+        height: 21.75rem
+        padding: 2rem
+        border-radius: 2rem
+
+        &-ul
+            display: flex
+            flex-direction: column
+            gap: 1.2rem
+
+            &-li 
+                display: flex
+                gap: 1rem
+                

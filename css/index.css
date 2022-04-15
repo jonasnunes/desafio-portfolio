@@ -9,6 +9,54 @@ body {
   font-family: "Merriweather Sans", sans-serif;
   background-color: #22212C;
   margin: 2rem;
+  color: #837E9F;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  gap: 2rem;
+}
+.aside-section-1 {
+  background-color: #302F3D;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  width: 21.75rem;
+  height: 18.25rem;
+}
+.aside-section-1-img {
+  border-radius: 50%;
+}
+.aside-section-1 div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+.aside-section-2 {
+  background-color: #302F3D;
+  width: 21.75rem;
+  height: 21.75rem;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.aside-section-2-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.aside-section-2-ul-li {
+  display: flex;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */
