@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  background-color: #22212C;
+  margin: 2rem;
+}
+
+/*# sourceMappingURL=index.css.map */
