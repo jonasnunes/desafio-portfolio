@@ -19,15 +19,12 @@ body
     gap: 2rem
 
     &-section-1 
-        background-color: variables.$bg-cards
         display: flex
         flex-direction: column
         justify-content: space-between
         align-items: center
-        padding: 2rem
-        border-radius: 2rem
-        width: 21.75rem
         height: 18.25rem
+        @include mixins.config
 
         &-img
             border-radius: 50%
@@ -38,11 +35,8 @@ body
             gap: .7rem
     
     &-section-2 
-        background-color: variables.$bg-cards
-        width: 21.75rem
         height: 21.75rem
-        padding: 2rem
-        border-radius: 2rem
+        @include mixins.config
 
         &-ul
             display: flex
@@ -52,4 +46,32 @@ body
             &-li 
                 display: flex
                 gap: 1rem
-                
+    
+    &-section-3 
+        height: 13rem
+        display: flex
+        flex-direction: column
+        justify-content: center
+        @include mixins.config
+
+        h2
+            margin-bottom: 1rem
+
+        &-tecnologias button 
+            width: 5.1rem
+            height: 1.5rem
+            padding: .5rem
+            margin: .5rem
+            font-size: .5rem
+            font-weight: 700
+            border: none
+            border-radius: .8rem
+            background-color: variables.$bg-techs
+        
+    &-section-4 
+        @include mixins.config
+        @include mixins.definition-list
+    
+    &-section-5 
+        @include mixins.config 
+        @include mixins.definition-list

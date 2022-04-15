@@ -5,3 +5,23 @@
     flex-direction: column
     justify-content: center
     align-items: center
+
+@mixin config
+    width: 22.75rem
+    padding: 2rem
+    border-radius: 2rem
+    background-color: variables.$bg-cards
+
+@mixin definition-list
+    h2
+        margin-bottom: 1rem
+        
+    dl dt
+        font-weight: 700
+        
+    dl dt:hover
+        opacity: .7
+        
+    &-dd
+        text-indent: 1.5rem
+        font-weight: 400
