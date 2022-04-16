@@ -3,7 +3,6 @@
 @mixin flex-center
     display: flex
     flex-direction: column
-    justify-content: center
     align-items: center
 
 @mixin config
@@ -30,3 +29,27 @@
     &-dd
         text-indent: 1.5rem
         font-weight: 400
+
+@mixin quebra1
+    @media(max-width: 1136px)
+        @content
+
+@mixin quebra2
+    @media(max-width: 1132px)
+        @content
+
+@mixin quebra3
+    @media(max-width: 1060px)
+        @content
+
+@mixin quebra4
+    @media(max-width: 788px)
+        @content
+
+@mixin quebra5
+    @media(max-width: 450px)
+        @content
+
+@mixin quebra6
+    @media(max-width: 364px)
+        @content

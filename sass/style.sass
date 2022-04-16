@@ -12,13 +12,15 @@ body
     background-color: variables.$bg-color
     color: variables.$text-color
     display: flex
-    justify-content: center
+    justify-content: space-around
     margin: 2rem 0
 
 .aside
     @include mixins.flex-center
     width: 30vw
     gap: 2rem
+    @include mixins.quebra3 
+        width: 100vw
 
     &-section-1 
         display: flex
@@ -27,6 +29,9 @@ body
         align-items: center
         height: 18.25rem
         @include mixins.config
+        @include mixins.quebra5 
+            width: 100%
+            border-radius: 0
 
         &-img
             border-radius: 50%
@@ -39,6 +44,9 @@ body
     &-section-2 
         height: 21.75rem
         @include mixins.config
+        @include mixins.quebra5 
+            width: 100%
+            border-radius: 0
 
         &-ul
             display: flex
@@ -55,6 +63,11 @@ body
         flex-direction: column
         justify-content: center
         @include mixins.config
+        @include mixins.quebra5 
+            width: 100%
+            border-radius: 0
+        @include mixins.quebra6 
+            height: auto
 
         h2
             margin-bottom: 1rem
@@ -73,22 +86,34 @@ body
     &-section-4 
         @include mixins.config
         @include mixins.definition-list
+        @include mixins.quebra5 
+            width: 100%
+            border-radius: 0
     
     &-section-5 
         @include mixins.config 
         @include mixins.definition-list
+        @include mixins.quebra5 
+            width: 100%
+            border-radius: 0
 
 .main
     display: flex
     flex-direction: column
     width: 60vw
     gap: 2rem
+    @include mixins.quebra3 
+        width: 100vw
+    @include mixins.quebra4 
+        display: none
 
     &-section-1 
         @include mixins.config-main
         display: flex
         justify-content: space-between
         align-items: center
+        @include mixins.quebra3 
+            width: 19.25rem
 
         a
             text-decoration: none
@@ -101,6 +126,9 @@ body
     &-section-2 
         display: flex
         justify-content: space-between
+        @include mixins.quebra1 
+            flex-direction: column
+            gap: 2rem
 
         &-div-principal
             display: flex
@@ -120,6 +148,8 @@ body
                 justify-content: space-between
                 align-items: center
                 margin-top: 1.5rem
+                @include mixins.quebra2 
+                    display: block
 
                 &-div2b 
                     display: flex
@@ -138,14 +168,21 @@ body
 
     &-section-3 
         @include mixins.config-main
+        @include mixins.quebra3 
+            width: 19.25rem
     
     &-section-4 
         @include mixins.config-main
         display: flex
         gap: 1rem
+        @include mixins.quebra3 
+            width: 19.25rem
+            display: block
 
         img
             border-radius: 50%
+            @include mixins.quebra3 
+                margin-bottom: 1rem
 
         &-div-principal
             display: flex
@@ -160,3 +197,5 @@ body
                 &-div1b 
                     display: flex
                     gap: 1rem
+                    @include mixins.quebra3 
+                        display: block
